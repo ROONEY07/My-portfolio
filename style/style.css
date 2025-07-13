@@ -102,3 +102,45 @@ nav ul li a
     letter-spacing: 0%;
     color: #757575;
 }
+
+/* about section */
+main
+{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.about
+{
+    border-radius: 10px;
+    background-color: #FFF8F3;
+    text-align: center;
+    margin: 130px;
+}
+
+.about-titte
+{
+    font-weight: bold;
+    font-size: 35px;
+}
+.about-description
+{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #757575;
+}
+
+.about-items
+{
+    display: flex;
+    justify-content: space-around;
+}
+.item-description
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #181818;
+
+}
