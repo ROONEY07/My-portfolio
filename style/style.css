@@ -6,6 +6,7 @@
   font-variation-settings:
     "wdth" 100;
 }
+
 /* Shared style */
 .text-primary
 {
@@ -113,15 +114,20 @@ nav ul li a
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 0%;
-    color: #757575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* main section */
 main
 {
-    width: 1140px;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main section
@@ -173,6 +179,11 @@ main section
 }
 
 /* what i do section  */
+.skills
+{
+    width: 100%;
+    height: auto;
+}
 .skill
 {
     padding: 30px;    
@@ -240,6 +251,8 @@ main section
 /* Footer section */
 footer
 {
+    /* width: 100%;
+    max-width: 1140px; */
     background-color: #FFF8F3;
     padding: 130px 230px;
     display: flex;
@@ -261,7 +274,7 @@ footer
     color: #474747;
 }
 
-footer input[type="text"]
+footer input[type="text"],footer input[type="email"]
 {
     width: 450px;
     height: 64px;
@@ -290,3 +303,71 @@ footer input[type="text"]
 {
     margin-top: 24px;
 }
+
+
+/* Responsive style section */
+@media screen and (max-width: 576px) 
+{
+    .hide{
+        display: none;
+    }
+
+   .skill-container, .resume-container, .about-items, .banner, nav, nav > ul
+   {
+      flex-direction: column;
+   }
+
+   .footer
+   {
+      flex-direction: column;
+      padding: 30px;
+   }
+
+   footer input[type="text"], footer input[type="email"], footer #text-area
+    {
+        width: calc(100% - 10%);
+    }
+
+    .about
+    {
+        padding: 20px;
+    }
+    
+    .header
+    {
+        background-image: none;
+        
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .banner-content
+    {
+        width: 100%;
+        margin: 20px;
+        justify-content: center;
+    }
+    
+    .banner-button
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        margin: auto;
+    }
+
+    .btn-primary{
+
+        margin-top: 20px;
+    }
+}
+
+
+
+
