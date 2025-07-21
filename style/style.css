@@ -368,6 +368,29 @@ footer input[type="text"],footer input[type="email"]
     }
 }
 
+/* Responsive for tablat mode */
+@media screen and (min-width:576px) and (max-width:990px) {
+    .banner
+    {
+        flex-direction: column;
+    }
 
+    .skill-container
+    {
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer
+    {
+        flex-direction: column;
+    }
+
+    .about-items
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
 
 
